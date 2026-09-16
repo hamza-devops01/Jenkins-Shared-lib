@@ -8,3 +8,4 @@ withCredentials([usernamePassword(
                 sh "docker image tag "${imageName}" ${env.dockerHubUser}/${imageName}"
                 sh "docker push ${env.dockerHubUser}/${imageName}:latest"
 }
+}
